@@ -87,4 +87,7 @@ class TeamMemberViewModel(app: Application) : AndroidViewModel(app) {
     fun displayTeamMemberDetailComplete() {
         _navigateToSelectedMember.value = null
     }
+    fun addTeamMembers(list:List<TeamMember>){
+        _teamMembers.value = list
+    }
 }
